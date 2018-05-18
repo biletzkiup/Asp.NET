@@ -22,5 +22,34 @@ namespace Aula1505.Controllers
 
             return View();
         }
+
+
+        public ActionResult Formulario()
+        {
+
+            return View();
+        }
+
+
+
+        [HttpPost]
+        public ActionResult Formulario(string nome, string descricao, bool ativo)
+        {
+            return View();
+        }
+
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Create(Categoria categoria)
+        {
+
+            return View(categoria);
+        }
     }
 }
